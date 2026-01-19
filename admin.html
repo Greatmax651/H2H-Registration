@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>H2H FA Admin Dashboard</title>
+</head>
+<body>
+
+<script>
+  const pin = prompt("Enter Admin PIN");
+  if (pin !== "1234") {
+    alert("Access denied!");
+    window.location.href = "index.html";
+  }
+</script>
+
+<h2>H2H FA – Admin Dashboard</h2>
+
+<div id="players"></div>
+
+<script src="script.js"></script>
+
+<script>
+  // Load all players automatically when admin page opens
+  loadPlayers();
+</script>
+
+</body>
+</html>
